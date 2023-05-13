@@ -1,55 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
 body {
-    width: 100%;
-    
-    background-color: aqua;
+    height: 100vh;
+    background-color: #000;
+    background-image: url;
 }
-
-.app_header {
-    background-color: rgb(7, 81, 71);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.app_logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: auto;
-}
-
-.app_logo .app_title {
-    width: 150px;
-    padding: 10px;
-}
-
-.app_links {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-   
-    
-    
-}
-
-.app_links li {
-    margin-right: 5rem;
-   border: 1px solid #555;
-    padding: 5px;
-}
-
-.app_links li a 
-{
-    color: blueviolet;
-    font-size: 20px;
-    
-}
-
-.app_links li:hover {
-    background-color: #ffffff;
-}
-
-
-
