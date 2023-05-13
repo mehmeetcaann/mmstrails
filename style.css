@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lobster', cursive; 
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 body {
@@ -28,18 +28,15 @@ li {
     
 }
 li:hover {
-    color:#fff
+    color:#fff;
+    transform: scale(1.05);
+    background-color: rgb(146, 96, 3);
 }
 
 a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
-    
-}
-
-a:hover {
-    color: red;
 }
 
 /* HEADER */
@@ -79,7 +76,7 @@ header {
     border: none;
     outline: none;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
@@ -87,19 +84,33 @@ header {
 .action_btn:hover {
     transform: scale(1.05);
     color: #fff;
+    background-color: rgb(146, 96, 3);
 }
 .action_btn:active {
     transform: scale(0.95);
 }
 
-/* DROPDOWN MENU */
-.dropdown_menı {
+/* DROPDOWN MENU */ 
+.dropdown_menu {
+    display: none;
     position: absolute;
     right: 2rem;
     top: 60px;
     width: 300px;
     background-color: rgba(255,255,255,0.1);
-    
+    border-radius: 10px;
+    overflow: hidden;
+}
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 /* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
